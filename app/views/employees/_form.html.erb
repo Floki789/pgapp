@@ -1,0 +1,72 @@
+<%= form_with(model: employee) do |form| %>
+  <% if employee.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(employee.errors.count, "error") %> prohibited this employee from being saved:</h2>
+
+      <ul>
+        <% employee.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :company_code_provided, style: "display: block" %>
+    <%= form.text_field :company_code_provided %>
+  </div>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :email_company, style: "display: block" %>
+    <%= form.text_field :email_company %>
+  </div>
+
+  <div>
+    <%= form.label :percentage_btc, style: "display: block" %>
+    <%= form.number_field :percentage_btc %>
+  </div>
+
+  <div>
+    <%= form.label :fix_amount_btc, style: "display: block" %>
+    <%= form.number_field :fix_amount_btc %>
+  </div>
+
+  <div>
+    <%= form.label :btc_address, style: "display: block" %>
+    <%= form.text_field :btc_address %>
+  </div>
+
+  <div>
+    <%= form.label :btc_address_confirmed, style: "display: block" %>
+    <%= form.check_box :btc_address_confirmed %>
+  </div>
+
+  <div>
+    <%= form.label :hash_of_btc_address, style: "display: block" %>
+    <%= form.text_field :hash_of_btc_address %>
+  </div>
+
+  <div>
+    <%= form.label :account_active, style: "display: block" %>
+    <%= form.check_box :account_active %>
+  </div>
+
+  <div>
+    <%= form.label :payroll_active, style: "display: block" %>
+    <%= form.check_box :payroll_active %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

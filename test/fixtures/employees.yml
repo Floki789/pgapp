@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_code_provided: MyString
+  first_name: MyString
+  last_name: MyString
+  email_company: MyString
+  percentage_btc: 1
+  fix_amount_btc: 1
+  btc_address: MyString
+  btc_address_confirmed: false
+  hash_of_btc_address: MyString
+  account_active: false
+  payroll_active: false
+
+two:
+  company_code_provided: MyString
+  first_name: MyString
+  last_name: MyString
+  email_company: MyString
+  percentage_btc: 1
+  fix_amount_btc: 1
+  btc_address: MyString
+  btc_address_confirmed: false
+  hash_of_btc_address: MyString
+  account_active: false
+  payroll_active: false
